@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emld_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emld/emld_{{ version }}.tar.gz
-  sha256: ae565b6f5f8901e22f496c477d500d243aa9f2d73a40431917437ac272677622
+  sha256: 98af44253bb666112a0707c19b795d5fd073b6b080e05a7cba6d2d338cfac199
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
