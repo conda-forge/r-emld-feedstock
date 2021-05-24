@@ -5,11 +5,9 @@ Home: https://github.com/ropensci/emld
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-emld-feedstock/blob/master/LICENSE.txt)
 
 Summary: This is a utility for transforming Ecological Metadata Language ('EML') files into 'JSON-LD' and back into 'EML.'  Doing so creates a list-based representation of 'EML' in R, so that 'EML' data can easily be manipulated using standard 'R' tools. This makes this package an effective backend for other 'R'-based tools  working with 'EML.' By abstracting away the complexity of 'XML' Schema, developers can build around native 'R' list objects and not have to worry about satisfying many of the additional constraints of set by the schema (such as element ordering, which is handled automatically). Additionally, the 'JSON-LD'  representation enables the use of developer-friendly 'JSON' parsing and serialization that may facilitate the use of 'EML' in contexts outside of 'R,' as well as the informatics-friendly serializations such as 'RDF' and 'SPARQL' queries.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-emld` from the `conda-forge` channel can be achieved by adding `co
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-emld` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
