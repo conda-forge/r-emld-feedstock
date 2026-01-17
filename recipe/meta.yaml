@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/emld_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/emld/emld_{{ version }}.tar.gz
-  sha256: 96aa667cf54048d5c3a981d803d67592db64b48dc383540477c8650743f719f6
+  sha256: 7f1b34ff70b20a38f7269bdb05d98dc6c584f6951ceb40f239eb9f07be5f7b5a
 
 build:
   number: 0
